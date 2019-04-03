@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html class = "main">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'styles/style.css')}}">
 	<head>
 		<meta charset ='utf-8'>
 		<title>QDeL QM Simulation</title>
 	<link rel= "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 	<body> 
+		<div>
 		{% include 'includes/_navbar.html' %}
+		</div>
 
-		<div class = "container">
 		{% include 'includes/_messages.html'%}
 		{% block body %}{% endblock %}
 
 		<script src = "https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</body>
+	<footer>
+		<p>Copyright &copy; 2019 QDeL</p>
+		<a href = "https://www.facebook.com/" target = "_blank"><img src = "{{url_for('static', filename = 'styles/fb.png')}}"></a>
+		<img src = "{{url_for('static', filename = 'styles/insta.png')}}"></img>
+		<img src = "{{url_for('static', filename = 'styles/twitter.png')}}"></img>
+	</footer>
 </html>
 

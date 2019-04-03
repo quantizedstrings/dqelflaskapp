@@ -1,18 +1,104 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<style type="text/css">
-	#main-header{
-		text-align: center;
-		background: lightgrey;
-		padding: 10px;
-		font-size: 7em;
-		
-	}
-</style>
-	<div id = "main-header">
-		<header>Welcome to QDeL</header>
-		<p class = "lead">QMS is an open source program developed by QDeL. This program can be used as a teaching resource for upper division quantum mechanics at the collegiate level.</p>
-	</div>
 
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'styles/style.css')}}">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<div id = "home">
+<div id="myCarousel" class="carousel container" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+
+  <div class="carousel-inner">
+    <div class="item active img-responsive">
+      <img src="../static/styles/imgb.jpg" alt="Chania">
+      <div class="carousel-caption">
+        <h3><span class = "highlight">QDeL</span>: the source for the most advanced and powerful open-source software for physics.</h3>
+        <p>QDeL provides the most expansive database of computational and theoretical physics software, that can be utilized by students, teachers, and scientific researchers.</p>
+        <p>Download.Compile.Learn.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="../static/styles/imgc.jpg" alt="Chicago" >
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="../static/styles/img3.jpg" alt="New York">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  </div>
+
+
+  <a class="left carousel-control container" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only container">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<!-- 	<style type="text/css">
+		#main-header{
+			text-align: center;
+			padding: 10px;
+			font-size: 7em;
+			
+		}
+	</style>
+	<section id = "showcase">
+		<div id = "main-header">
+			<header>Welcome to QDeL</header>
+			<p class = "lead">QMS is an open source program developed by QDeL. This program can be used as a teaching resource for upper division quantum mechanics at the collegiate level.</p>
+		</div>
+</section> -->
+<section id = "newsletter">
+  <div class = "containter">
+    <h1><span class = "highlight">Subscribe</span> to our Newsletter</h1>
+    <form>
+      <input type = "email" placeholder = "Enter Email...">
+      <button type = "submit" class = "button_1">Subscribe</button>
+    </form>
+  </div>
+</section>
+<section id="boxes">
+  <div class="container">
+    <div class="box">
+      <img src="../static/styles/physics.png">
+      <h3>Physics Software</h3>
+      <p></p>
+    </div>
+    <div class="box">
+      <img src="../static/styles/python.png">
+      <h3>Multi-Language</h3>
+      <p>Software included in the DQeL database maintains no language preference. Most files are Python, Matlab, and C++ often including an executable file to be ran on Windows/MacOS/Linux operating systems.  </p>
+    </div>
+    <div class="box">
+      <a href= "https://opensource.org/docs/osd" target = "_blank"><img src="../static/styles/open.png"></a>
+      <h3>Open Source</h3>
+      <p>The creation and distribution of all software under the QDeL site is entirely open-source and available to all persons under the provisons defined by the open source initiative guidelines. </p>
+    </div>
+  </div>
+</section>
 {% endblock %}

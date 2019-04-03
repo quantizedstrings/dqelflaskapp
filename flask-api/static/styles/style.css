@@ -1,0 +1,167 @@
+/*
+html{
+	background-color: #2c3531;
+}*/
+
+
+/*body {
+	color:#ffffff;
+	margin:0;
+}*/
+
+
+.container{
+  margin:auto;
+  overflow:hidden;
+ }
+
+.button_1{
+	height:38px;
+	background: #76b900;
+	border:0;
+	padding-left:20px;
+	padding-right:20px;
+	color:#ffffff;
+	text-transform: uppercase;
+	font-weight:bold; 
+	border-radius: 2px;
+}
+
+#home{
+	background-image: radial-gradient(circle, #2c3531, black);
+/*	background-color: #2c3531;*/
+	margin-left:1px;
+	margin-right:1px;
+	border-bottom: 5px solid #76b900; 
+}
+
+.navbar.navbar-default a{
+	color: #ffffff;
+	margin-top: 10px;
+
+}
+
+.navbar.navbar-default li a{
+	color: #ffffff;
+}
+
+.navbar {
+	height: 60px; 
+	width:100%;
+	position:fixed;
+	background-color: #2c3531;
+	border-bottom-width: 5px;
+	border-bottom-color: #76b900;
+	margin-bottom: 0 !important;
+	z-index:9;
+}
+
+.highlight {
+	color: #76b900;
+	font-weight: bold;
+}
+
+.carousel{
+	height:70%;
+    width:70%;
+}
+
+.carousel-caption h3 {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:  !important;
+	color: white !important;
+	margin-bottom:25%;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	height:80%;
+    width:80%;
+}
+
+.carousel-inner > .item > img {
+	display:block;
+	margin-top: 125px;
+	margin-bottom: 75px;
+	border-color: #76b900;
+	border: 2px solid #76b900; 
+	border-radius: 8px;
+}
+
+.carousel-indicators .active {
+    background-color: #76b900;
+}
+#newsletter{
+	width:100%;
+	height:125px;
+	color:#ffffff;
+	background:#2c3531;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+#newsletter h1{
+	font-size: 28px;
+	margin-left:15%;
+	float:left;
+	margin-top:50px !important; 
+	height:50%;
+}
+
+#newsletter form{
+	margin-right:15%;
+	margin-top:50px;
+	float:right;
+}
+
+#newsletter input[type = "email"]{
+	padding:4px;
+	height:38px;
+	width:250px;
+	color:#000000 !important;
+
+}
+.left{
+	margin-bottom: 75px;
+	margin-top: 125px;
+	margin-left: 15px;
+
+}
+
+.right{
+	margin-bottom: 75px;
+	margin-top: 125px;
+	margin-right:15px;
+
+}
+/*boxes*/
+
+#boxes{
+	margin-top: 20px;
+
+}
+
+#boxes .box{
+	float:left;
+	width:30%;
+	padding:10px;
+	text-align:center;
+}
+
+#boxes .box img{
+	width:90px;
+}
+
+footer {
+	text-align:center;
+	background-color:#76b900;
+	width:100%;
+	height: 100px; 
+}
+
+footer p{
+	padding-top:20px;
+}
+
+footer img{
+	padding:5px;
+	margin:auto;
+	width:30px;
+}

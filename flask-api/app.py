@@ -4,6 +4,7 @@ from flask_mysqldb import MySQL
 from wtforms import Form, StringField, TextField, PasswordField, validators
 from passlib.hash import sha256_crypt
 from functools import wraps
+import IPython
 
 app = Flask(__name__)
 
@@ -140,6 +141,8 @@ def logout():
 @is_logged_in
 def dashboard():
 	return render_template('dashboard.html')
+
+# IPython.embed()
 
 if __name__ == '__main__':
 	app.secret_key = 'secret123'

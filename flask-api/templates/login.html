@@ -1,6 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block body %}
+  <div class = "container">
   <h1>Login</h1>
   <form action="" method="POST">
     <div class="form-group">
@@ -12,5 +13,6 @@
       <input type="password" name="password" class="form-control" value={{request.form.password}}>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
+  </div>>
   </form>
 {% endblock %}
